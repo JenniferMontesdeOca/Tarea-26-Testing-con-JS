@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fruits List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fruits I Want to Eat</h1>
+    <ul id="fruits-list"></ul>
+  </div>
+
+  <script>
+    const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+    const fruitsList = document.getElementById('fruits-list');
+
+    fruits.forEach(fruit => {
+      const li = document.createElement('li');
+      li.textContent = `I want to eat a ${fruit}`;
+      fruitsList.appendChild(li);
+    });
+  </script>
+</body>
+</html>
